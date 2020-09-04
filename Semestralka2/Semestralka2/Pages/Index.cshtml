@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<p>Unanswered questions:</p><p id="unansweredCount">@Model.UnansweredCount</p>
+
+<h3>Oldest ten unanswered:</h3>
+<form asp-page="Answer" method="get">
+    <input class="btn btn-primary" type="submit" value="Answer oldest unanswered question" />
+</form>
+<table id="table" class="table">
+    <thead>
+        <tr><th>Date and time of creation</th><th>Question message</th><th>Attachment link</th></tr>
+    </thead>
+    <tbody>
+        @{ await Html.RenderPartialAsync("_QuestionsPartial", Model.OldestTenQuestions);}
+    </tbody>
+</table>
+
+@section Scripts{ 
+    <script src="https://unpkg.com/@@microsoft/signalr@3.1.0/dist/browser/signalr.min.js"></script>
+    <script>
+        const hubConnection = new signalR.HubConnectionBuilder()
+            .withUrl("/hub")
+            .build();
+
+        function appendLeadingZeroes(n) {
+            if (n <= 9) {
+                return "0" + n;
+            }
+            return n
+        }
+        let tbody = document.getElementById("table").getElementsByTagName('tbody')[0];
+
+        hubConnection.on("Added", function (data) {
+            //let date = new Date(data.dateTimeOfCreation);
+            //let formattedDate = appendLeadingZeroes(date.getDate()) + "." + appendLeadingZeroes(date.getMonth() + 1) + "." + date.getFullYear() + " " + date.getHours() + ":" + appendLeadingZeroes(date.getMinutes()) + ":" + appendLeadingZeroes(date.getSeconds());
+            //console.log(formattedDate);
+            //let dateTimeTd = document.createElement('td');
+            //dateTimeTd.appendChild(document.createTextNode(formattedDate));
+            //let questionMessageTd = document.createElement('td');
+            //questionMessageTd.appendChild(document.createTextNode(data.text));
+            //let attachmentTd = document.createElement('td');
+
+            //if (data.fileName != '') {
+            //    let link = document.createElement('a');
+            //    let linkToFile = 'http://localhost:60994/GetFile?filename=' + data.fileName;
+            //    link.setAttribute('href', linkToFile);
+            //    link.innerHTML = 'Download attachment';
+            //    attachmentTd.appendChild(link);
+            //} else {
+            //    attachmentTd.innerHTML = 'No attachment';
+            //}
+
+
+            //let tr = document.createElement('tr');
+            //tr.appendChild(dateTimeTd);
+            //tr.appendChild(questionMessageTd);
+            //tr.appendChild(attachmentTd);
+            //let tbody = document.getElementById("table").getElementsByTagName('tbody')[0];
+            //tbody.insertBefore(tr, tbody.firstChild);
+
+            $(tbody).load("/Index?handler=Partial");
+            let result = parseInt($("#unansweredCount").html(), 10);
+            result += 1;
+            console.log(result);
+            $("#unansweredCount").text(result);
+        });
+
+        hubConnection.on("Answered", function (data) {
+            $(tbody).load("/Index?handler=Partial");
+            let result = parseInt($("#unansweredCount").html(), 10);
+            result -= 1;
+            console.log(result);
+            $("#unansweredCount").text(result);
+        });
+        hubConnection.start();
+    </script>
+}

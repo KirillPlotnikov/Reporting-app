@@ -1,0 +1,36 @@
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.deps.json
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csprojAssemblyReference.cache
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfoInputs.cache
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfo.cs
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.json
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.dev.json
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.genruntimeconfig.cache
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csproj.CoreCompileInputs.cache
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+C:\Users\ironb\source\repos\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.deps.json
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.json
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.dev.json
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csprojAssemblyReference.cache
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfoInputs.cache
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfo.cs
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.genruntimeconfig.cache
+C:\Users\ironb\source\repos\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csproj.CoreCompileInputs.cache
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.deps.json
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.json
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.runtimeconfig.dev.json
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\bin\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csprojAssemblyReference.cache
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfoInputs.cache
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.AssemblyInfo.cs
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.csproj.CoreCompileInputs.cache
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.dll
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.pdb
+D:\.NET Projects\ASP .NET Core\Semestralka2\SemestralkaDataControl\SemestralkaDataControl\obj\Debug\netcoreapp3.1\SemestralkaDataControl.genruntimeconfig.cache

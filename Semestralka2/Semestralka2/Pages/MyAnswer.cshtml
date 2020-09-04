@@ -1,0 +1,15 @@
+﻿@page
+@model Semestralka2.Pages.MyAnswerModel
+
+<p><strong>Answer</strong></p>
+<p>@Model.Answer.Text</p>
+<p><strong>Attachment:</strong></p>
+
+@if (Model.Answer.FileName != null)
+{
+    <a asp-page="GetFile" asp-route-filename="@Model.Answer.FileName" asp-route-question="false">Download attachment</a>
+}
+else
+{
+    <p>No attachment</p>
+}

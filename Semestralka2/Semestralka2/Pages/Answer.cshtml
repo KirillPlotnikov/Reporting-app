@@ -1,0 +1,39 @@
+﻿@page
+@model Semestralka2.Pages.AnswerModel
+
+
+
+<p><strong>Date and time of creation:</strong></p>
+<p>@Model.oldestUnanswered.DateTimeOfCreation</p>
+<p><strong>Customer's email:</strong></p>
+<p>@Model.oldestUnanswered.Email</p>
+<p><strong>Text:</strong></p>
+<p>@Model.oldestUnanswered.Text</p>
+<p><strong>Attachment link:</strong></p>
+@if (Model.oldestUnanswered.FileName != null)
+{
+    <a asp-page="GetFile" asp-route-filename="@Model.oldestUnanswered.FileName" asp-route-question="true">Download attachment</a>
+}
+else
+{
+    <p>No attachment</p>
+}
+
+<form asp-antiforgery="true" method="post" enctype="multipart/form-data">
+    <h4>Reponse:</h4>
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" value="@Model.oldestUnanswered.Id" asp-for="@Model.Answer.QuestionId" />
+    <div class="form-group">
+        <label asp-for="@Model.Answer.Text"></label>
+        <input asp-for="@Model.Answer.Text" class="form-control" />
+        <span asp-validation-for="@Model.Answer.Text" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Answer.File"></label>
+        <input asp-for="@Model.Answer.File" class="form-control" />
+        <span asp-validation-for="@Model.Answer.File" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

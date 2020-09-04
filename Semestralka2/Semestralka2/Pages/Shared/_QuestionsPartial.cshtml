@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SemestralkaDataControl.Models.Question>
+
+@foreach (var q in Model)
+{
+    <tr>
+        <td>@q.DateTimeOfCreation</td>
+        <td>@q.Text</td>
+        <td>
+            @if (q.FileName != null)
+            {
+                <a asp-page="GetFile" asp-route-filename="@q.FileName" asp-route-question="true">Download attachment</a>
+            }
+            else
+            {
+                @:No attachment
+            }
+        </td>
+    </tr>
+}
