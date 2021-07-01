@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NETCore.MailKit.Extensions;
+using NETCore.MailKit.Infrastructure.Internal;
 using Semestralka2.Hubs;
 using SemestralkaDataControl.EF;
 using SemestralkaDataControl.Repos;
@@ -32,6 +34,10 @@ namespace Semestralka2
             services.AddScoped<IAnswersRepo, AnswersRepo>();
             services.AddScoped<IQuestionsRepo, QuestionsRepo>();
             services.AddScoped<IProductsAndCategoriesRepo, ProductsAndCategoriesRepo>();
+            services.AddMailKit(builder =>
+            {
+                builder.UseMailKit(Configuration.GetSection("MailOptions").Get<MailKitOptions>());
+            });
             services.AddCors();
             services.AddSignalR();
             services.AddControllers();

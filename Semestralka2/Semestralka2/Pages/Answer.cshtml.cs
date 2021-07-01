@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using NETCore.MailKit.Core;
 using Semestralka2.Hubs;
 using Semestralka2.Services;
 using SemestralkaDataControl.EF;
@@ -22,12 +23,14 @@ namespace Semestralka2.Pages
         private readonly ApplicationContext _context;
         private readonly IHubContext<MainHub> _hubContext;
         private readonly IWebHostEnvironment _environment;
+        private readonly IEmailService _emailService;
 
-        public AnswerModel(ApplicationContext context, IHubContext<MainHub> hubContext, IWebHostEnvironment environment)
+        public AnswerModel(ApplicationContext context, IHubContext<MainHub> hubContext, IWebHostEnvironment environment, IEmailService emailService)
         {
             _context = context;
             _hubContext = hubContext;
             _environment = environment;
+            _emailService = emailService;
         }
 
         public string Message { get; set; }
@@ -66,14 +69,14 @@ namespace Semestralka2.Pages
                  _context.Answers.Add(Answer);
                 await _context.SaveChangesAsync();
                 var question = _context.Questions.Where(q => q.Id == Answer.QuestionId).FirstOrDefault();
-                EmailService emailService = new EmailService();
+                
                 var callbackUrl = Url.Page(
                         "MyAnswer",
                         "",
                         new { answerId = Answer.Id },
                         protocol: HttpContext.Request.Scheme);
-                await emailService.SendEmailAsync(Answer.Question.Email, "Check answer for your report",
-                        $"Your report has been answered. Visit link: <a href='{callbackUrl}'>Read the answer</a>");
+                await _emailService.SendAsync(Answer.Question.Email, "Check answer for your report",
+                        $"Your report has been answered. Visit link: <a href='{callbackUrl}'>Read the answer</a>", isHtml: true);
                 await _hubContext.Clients.All.SendAsync("Answered");
                 return RedirectToPage("Index");
             }

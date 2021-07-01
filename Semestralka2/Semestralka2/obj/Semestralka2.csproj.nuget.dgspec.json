@@ -1,34 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\Semestralka2\\Semestralka2.csproj": {}
+    "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\Semestralka2\\Semestralka2.csproj": {}
   },
   "projects": {
-    "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\Semestralka2\\Semestralka2.csproj": {
+    "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\Semestralka2\\Semestralka2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\Semestralka2\\Semestralka2.csproj",
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\Semestralka2\\Semestralka2.csproj",
         "projectName": "Semestralka2",
-        "projectPath": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\Semestralka2\\Semestralka2.csproj",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\Semestralka2\\Semestralka2.csproj",
         "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\Semestralka2\\obj\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\Semestralka2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj": {
-                "projectPath": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj"
+              "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj": {
+                "projectPath": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj"
               }
             }
           }
@@ -41,6 +48,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -50,13 +58,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "MailKit": {
-              "target": "Package",
-              "version": "[2.7.0, )"
-            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.0.3, )"
             }
           },
           "imports": [
@@ -77,32 +85,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj": {
+    "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj",
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj",
         "projectName": "SemestralkaDataControl",
-        "projectPath": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\SemestralkaDataControl.csproj",
         "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET Projects\\ASP .NET Core\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\obj\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Reporting app\\Semestralka2\\SemestralkaDataControl\\SemestralkaDataControl\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -114,6 +129,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -167,7 +183,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
